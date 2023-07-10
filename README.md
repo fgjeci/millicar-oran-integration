@@ -5,13 +5,13 @@ It contains the deployment of [OpenRAN ns3 module](https://openrangym.com/tutori
 
 To run the project:
 - Install the [ns3 packages](https://www.nsnam.org/wiki/Installation) needed to run ns3. 
-- Configure & build ns3-mmwave-millicar
+- Configure & build [ns3-mmwave-millicar] (https://github.com/fgjeci/ns3-mmwave-millicar)
 ```
 cd ../ns3-mmwave-millicar
 ./ns3 configure --build-profile=debug --disable-werror --enable-examples
 ./ns3 build
 ```
-- Import docker images and setup docker containers of [OpenRAN RIC](https://openrangym.com/tutorials/ns-o-ran)
+- Import docker images and setup docker containers of [OpenRAN RIC](https://github.com/fgjeci/colosseum-near-rt-ric-2)
 ```
 cd ../colosseum-near-rt-ric-2/setup-scripts
 ./import-wines-images.sh
