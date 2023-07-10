@@ -11,7 +11,7 @@ cd ../ns3-mmwave-millicar
 ./ns3 configure --build-profile=debug --disable-werror --enable-examples
 ./ns3 build
 ```
-- Import docker images and setup docker containers of [OpenRAN RIC](https://github.com/fgjeci/colosseum-near-rt-ric-2)
+- Import docker images and setup docker containers of [OpenRAN RIC](https://github.com/fgjeci/colosseum-near-rt-ric-2) basing on [OpenRAN GYM] (https://openrangym.com/tutorials/ns-o-ran)
 ```
 cd ../colosseum-near-rt-ric-2/setup-scripts
 ./import-wines-images.sh
