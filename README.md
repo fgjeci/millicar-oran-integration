@@ -17,7 +17,7 @@ cd ../colosseum-near-rt-ric-2/setup-scripts
 ./import-wines-images.sh
 ./setup-ric-bronze.sh
 ```
-- Create & install the shared library e2sim (Connects ns3-module with OpenRAN-RIC via SCTP/IP)
+- Create & install the shared library e2sim (E2-interface connecting ns3-module with OpenRAN-RIC via SCTP/IP)
 ```
 cd ../oran-e2sim/e2sim
 ./build_e2sim.sh
@@ -51,5 +51,14 @@ docker exec -it millicar-xapp-24 bash
 cd /home/millicar-xapp
 python3 run_xapp_multi_sim.py
 ```
-
-
+2. Starting ns3 simulation instances
+```
+cd ../millicar-oran-integration
+python millicar_load.py # Launches multiple processes in parallel, one per each simulation scenario
+```
+3. Starting RIC-E2-endpoint
+```
+docker exec -it millicar-xapp-24 bash
+cd /home/xapp-sm-connector
+./run_xapp.sh
+```
