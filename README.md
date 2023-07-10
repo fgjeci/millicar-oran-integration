@@ -22,7 +22,7 @@ cd ../colosseum-near-rt-ric-2/setup-scripts
 cd ../oran-e2sim/e2sim
 ./build_e2sim.sh
 ```
-- Setup the xApp container
+- Setup the [xApp container](https://github.com/fgjeci/millicar-xapp)
 ```
 cd ../millicar-xapp/setup-scripts
 ./setup-xapp-base.sh # Downloads & install the base image with the updated needed libraries
