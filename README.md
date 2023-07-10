@@ -5,7 +5,7 @@ It contains the deployment of [OpenRAN ns3 module](https://openrangym.com/tutori
 
 To run the project:
 - Install the [ns3 packages](https://www.nsnam.org/wiki/Installation) needed to run ns3. 
-- Configure & build [ns3-mmwave-millicar] (https://github.com/fgjeci/ns3-mmwave-millicar)
+- Configure & build [ns3-mmwave-millicar](https://github.com/fgjeci/ns3-mmwave-millicar)
 ```
 cd ../ns3-mmwave-millicar
 ./ns3 configure --build-profile=debug --disable-werror --enable-examples
@@ -17,7 +17,7 @@ cd ../colosseum-near-rt-ric-2/setup-scripts
 ./import-wines-images.sh
 ./setup-ric-bronze.sh
 ```
-- Create & install the shared library e2sim (E2-interface connecting ns3-module with OpenRAN-RIC via SCTP/IP)
+- Create & install the shared library [e2sim](https://github.com/fgjeci/oran-e2sim) (E2-interface connecting ns3-module with OpenRAN-RIC via SCTP/IP)
 ```
 cd ../oran-e2sim/e2sim
 ./build_e2sim.sh
