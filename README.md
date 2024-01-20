@@ -14,7 +14,6 @@ cd ../ns3-mmwave-millicar
 - Import docker images and setup docker containers of [OpenRAN RIC](https://github.com/fgjeci/colosseum-near-rt-ric-2) basing on [OpenRAN GYM](https://openrangym.com/tutorials/ns-o-ran)
 ```
 cd ../colosseum-near-rt-ric-2/setup-scripts
-# ./import-wines-images.sh
 ./setup-ric-bronze.sh
 ```
 - Create & install the shared library [e2sim](https://github.com/fgjeci/oran-e2sim) (E2-interface connecting ns3-module with OpenRAN-RIC via SCTP/IP)
@@ -25,13 +24,10 @@ cd ../oran-e2sim/e2sim
 - Setup the [xApp container](https://github.com/fgjeci/millicar-xapp)
 ```
 cd ../millicar-xapp/setup-scripts
-./setup-xapp-base.sh # Downloads & install the base image with the updated needed libraries
-./start-millicar-xapp-ns-o-ran.sh # Creates a secondary image with the python scripts of the logic
+./setup-xapp-base.sh # Downloads & install the base image with the updated needed libraries. The base image shall have the e2 interface installed, thus by default enabling the connection with e2term and the exchange of E2 messages
+./start-millicar-xapp-ns-o-ran.sh # Creates a secondary image with the python scripts of the xapp logic
 # if outside the xapp container, access bash mode of the container -> docker exec -it millicar-xapp-24 bash
 # Once inside the xapp container, go to /home/xapp-sm-connector directory
-cd /home/xapp-sm-connector
-./ric_message_sl.sh # ***** Run 2 times to create the shared library which encodes the E2 RIC control messages
-./ric_message_sl.sh # ***** Run 2 times to create the shared library which encodes the E2 RIC control messages
 ```
 Following the aforementioned steps, the xApp is configured to receive E2 messages, decode the xml format of the these messages and send back E2-Ric encoded messages.
 
