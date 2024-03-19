@@ -14,6 +14,7 @@ cd ../ns3-mmwave-millicar
 - Import docker images and setup docker containers of [OpenRAN RIC](https://github.com/fgjeci/colosseum-near-rt-ric-2) basing on [OpenRAN GYM](https://openrangym.com/tutorials/ns-o-ran)
 ```
 cd ../colosseum-near-rt-ric-2/setup-scripts
+./setup-e2term-base.sh
 ./setup-ric-bronze.sh
 ```
 - Create & install the shared library [e2sim](https://github.com/fgjeci/oran-e2sim) (E2-interface connecting ns3-module with OpenRAN-RIC via SCTP/IP)
