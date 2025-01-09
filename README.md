@@ -3,6 +3,10 @@
 This project includes an e2e setup and integration of [Millicar ns3 module](https://github.com/signetlabdei/millicar) with [OpenRAN](https://openrangym.com/) architecture.
 It contains the deployment of [OpenRAN ns3 module](https://openrangym.com/tutorials/ns-o-ran) architecture, the adopted [Millicar ns3 module](https://github.com/signetlabdei/millicar) to be interfaced with OpenRAN and the simulation script. 
 
+If you use this module in your research, please cite:
+
+F. Linsalata, E. Moro, F. Gjeci, M. Magarini, U. Spagnolini and A. Capone, "Addressing Control Challenges in Vehicular Networks Through O-RAN: A Novel Architecture and Simulation Framework," in IEEE Transactions on Vehicular Technology, vol. 73, no. 7, pp. 9344-9355, July 2024, doi: 10.1109/TVT.2024.3355202. [bibtex available here](https://ieeexplore.ieee.org/abstract/document/10401992?casa_token=TWpU68POP9EAAAAA:Xlz7_QlTv-bpkjZmL2DVw7xhyBgkPY7jsWhWC8zMmxI5bnqUn4ixuJM_yplhZiQiX8jP_bh-7A)
+
 To run the project:
 - Install the [ns3 packages](https://www.nsnam.org/wiki/Installation) needed to run ns3. 
 - Configure & build [ns3-mmwave-millicar](https://github.com/fgjeci/ns3-mmwave-millicar)
